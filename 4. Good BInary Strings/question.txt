@@ -1,0 +1,27 @@
+4. Good Binary Strings
+
+You are given a binary string of length N. The string can be divided into Good Binary Substrings.
+Good Binary Substrings satisfy these conditions:
+	1. No. of 1s = No. of 0s
+	2. Any prefix of the substrings should have more or at least equal number of 1s than 0s;
+
+Return the binary string that correspond to the largest number that can be formed by jumbling these Good Binary Substrings;
+
+Ex: 10101100
+The largest number than can be formed is 11001010.
+
+NOTE: Ohhh!! I am not sure what they asked, there are 2 versions::
+
+If the problem you saw today specifically said you can only swap "adjacent good substrings," then your current code is actually correct!
+    Your Code: Finds 10, 10, 0110 (if they are "Good") and sorts them.
+    The Recursive Code: Digs inside 1(101100)0, sorts the inside to get 1(110010)0, and then sorts that against other blocks.
+
+How to tell which one you need
+
+Look at the example given in your test:
+    If the input 11011000 becomes 11100100, you need recursion.
+    If the input only lets you move big blocks like (10)(1100) → (1100)(10), then your current code is the winner.
+
+
+I've written flat blocks solutions in soln1.cpp
+The recursion based solution is in soln2.cpp
