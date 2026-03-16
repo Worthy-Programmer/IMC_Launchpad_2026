@@ -1,6 +1,6 @@
 4. Good Binary Strings
 
-You are given a binary string of length N. The string can be divided into Good Binary Substrings.
+You are given a binary string of length N. These have substrings called Good Binary Substrings.
 Good Binary Substrings satisfy these conditions:
 	1. No. of 1s = No. of 0s
 	2. Any prefix of the substrings should have more or at least equal number of 1s than 0s;
